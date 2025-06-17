@@ -1,5 +1,0 @@
-[phases.setup]
-nixPkgs = ['libffi', 'pkg-config', 'gcc']
-
-[phases.install]
-cmds = ['pip install -r requirements.txt'] 
