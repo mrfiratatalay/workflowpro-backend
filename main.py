@@ -40,7 +40,12 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",  # Local development
-        "https://*.vercel.app",   # Vercel deployments
+        "http://127.0.0.1:3000",  # Local development alternative
+        "http://192.168.56.1:3000",  # User's current local IP
+        "http://192.168.1.1:3000",  # Common local network IP
+        "http://192.168.0.1:3000",  # Common local network IP
+        "https://workflowpro-frontend.vercel.app",  # Your specific Vercel deployment
+        "https://*.vercel.app",   # All Vercel deployments
         "https://*.railway.app",  # Railway deployments
         "https://*.netlify.app",  # Netlify deployments
     ],
